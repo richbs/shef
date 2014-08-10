@@ -1,0 +1,102 @@
+@font-face { font-family: 'TUOS Stephenson'; src: url(../../../fonts/sheffield/steph-webfont.eot.html); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'TUOS Stephenson'; src: url(//:) format('no404'), url(../../../fonts/sheffield/steph-webfont.woff.html) format('woff'),  url(../../../fonts/sheffield/steph-webfont.ttf.html) format('truetype'), url(../../../fonts/sheffield/steph-webfont.svgz) format('svg'), url(../../../fonts/sheffield/steph-webfont.svg) format('svg');  font-weight: normal; font-style: normal; }
+
+h2, h3, h4, h5, h6 { font-family: "TUOS Stephenson", Georgia, "Times New Roman", Times, serif; font-weight: normal; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5, h6 { font-size: 1.3em; }
+
+/* subject list table  */
+.subjectTable { background-color: #EFEFEF; border: 1px solid #999; margin-left: 1%; margin-right: 3%; padding: 2px 5px 2px 13px; }
+
+/* Repeating course summary block on ever page  */
+.courseInfoBlock { background: #EFEFEF url(../images/summary.jpg) top right no-repeat; border-bottom: 1px solid #999; border-left: 1px solid #999; margin-left: 1%; margin-right: 2%; padding: 2px 5px 2px 13px; line-height : 1.3em; }	
+.courseInfoBlock2 { background: #EFEFEF url(https://www.sheffield.ac.uk/prospectus/assets/styles/images/simplegradient.jpg) top right repeat-y; border-bottom: 1px solid #CCC; padding: 1px 5px 2px 5px; line-height : 1.3em; }
+.courseInfoBlock2 table { width: 100%; }
+ .courseInfoBlock2 table tr td { padding: 5px; vertical-align: top; }
+
+/* course navigation block for tabs */ 
+.courseNavigation { clear: both; padding-top: 20px; }
+.courseNavigation ul { list-style: none; display:inline; margin-left: 0; padding-left: 0; }
+.courseNavigation ul li { display: inline; padding: 3px 2px 5px 0px; }
+.courseNavigation ul li a { padding: 3px 6px 5px 5px; background: #DDD url(../images/tabbg.gif) top right no-repeat; color: #000; text-decoration: none; word-spacing: -2px; }
+
+.red { color: #FF0000; }
+
+/* tab  hover action */
+li.tabSummary a:hover, li.tabDepartment a:hover, li.tabModules a:hover, li.tabProfiles a:hover, li.tabUserDefined a:hover, li.tabGraduates a:hover, li.tabWhatnext a:hover { background: #369 url(../images/tabbga.gif) top right no-repeat; color: #FFF; }
+
+/* if summary is active... */
+div.tabSummary { border: 1px solid #CCC; background-image: none; }
+.active { background: #369 url(../images/tabbga.gif) top right no-repeat!important; color: #FFF!important; }
+
+/* if department is active... */
+div.tabDepartment, div.tabModules, div.tabProfiles, div.tabUserDefined, div.tabGraduates { border: 1px solid #369; }
+
+/* If promoGraphic is present */
+.video { margin-right: 180px; }
+img.promoGraphic { float: right; margin-top: 5px; }
+
+/* Details block for content */
+.courseDetails { margin-top: 5px; }
+.courseDetails a { color: blue; }
+.courseDetails a:hover { color: blue; background-color: transparent; }
+
+#courseSummary:after, #department:after, #modules:after, #studentprofile:after, #graduates:after, #userDefinedTab:after, #whatnext:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#courseSummary, #department, #modules, #studentprofile, #graduates, #userDefinedTab, #whatnext { display: inline-block; }
+
+#courseSummary, #department, #modules, #studentprofile, #graduates, #userDefinedTab, #whatnext  { padding: 15px; }
+#department, #modules, #studentprofile, #graduates, #userDefinedTab, #whatnext { display: none; }
+
+.courseDetails h2, .courseDetails h3, .courseDetails h4 { border-bottom: 1px solid #CCC; width: 97%; }
+.courseDetails h2 img, .courseDetails h3 img, .courseDetails h4 img { margin-right: 15px; }
+
+h2.departmentHeader { margin-right: 250px; margin-bottom: 0; }
+h3.departmentHeader { border-bottom: 1px solid #CCC; margin-top: 0; }
+
+.basketItem { border-bottom: 1px solid #CCC; width: 97%; }
+
+.bulletIndent { margin-left: 40px; padding-left: 15px; }
+.bulletIndent ul { margin-left: 15px; padding-left: 15px; }
+.bulletIndent ul li { list-style-image: url(../images/blue/libullet.jpg); }
+
+#entryRequirements { position: absolute; background-color: #FEFFE8; border: 1px solid #000; color: #000; padding: 5px; width: 500px; margin-top: -75px;	margin-left: -100px; }
+
+#entryRequirements ul { margin-left: 10px; padding-left: 10px; margin-top: 12px; margin-bottom: 12px; }
+
+th { background-color: #E6DCD2!important; }
+td.medbg, tr.medbg td { background-color: #F2EDE9!important; border: 1px solid #E5E0DC!important; }
+td.lightbg, tr.lightbg td { border: 1px solid #E5E0DC!important; }
+
+ul.alphabeticalList { margin-left: 0; padding-left: 10px; }
+ul.alphabeticalList li { display: inline; padding: 3px; font-size: 125%; font-weight: bold; font-family: Arial, sans-serif; }
+
+.noticeHighlight { background-color: #D4EDD4; border: 5px solid #C1E5C1; padding: 7px; }
+
+table.emailMyProspectus { width: 580px; }
+table.emailMyProspectus th { background-color: #E6DCD2!important; vertical-align: top; font-size: 100%; padding: 4px; width: 20%; }
+table.emailMyProspectus td { background-color: #F2EDE9!important; border: 1px solid #E5E0DC!important; vertical-align: top; padding: 4px; }
+
+table.bursary { width: 650px; }
+table.bursary th { background-color: #E6DCD2!important; vertical-align: top; font-size: 100%; padding: 4px;  }
+table.bursary td { background-color: #F2EDE9!important; border: 1px solid #E5E0DC!important; vertical-align: top; padding: 4px; }
+
+.emailMyProspectusList li a, .emailMyProspectusList li a:visited { color: blue; text-decoration: underline;	}
+
+#basketStatus { color: red; clear: both; text-align: right; }
+
+#bursaryHighlight { background-color: #D4EDD4; border: 3px solid #C1E5C1; padding: 2px; }
+
+/* admin stuff */
+#previewBanner { background-color: #369; width: 100%; margin: 0; }
+#previewBanner h1 { color: #FFF; padding: 5px 5px 5px 10px; font-family: Arial, Verdana, sans-serif; margin: 0; }
+
+/* Entry requirements table */
+#qualifications { border-collapse: collapse; width: 100%; }
+#qualifications th { background-color: #E6DCD2; }
+#qualifications th, #qualifications td { border: 1px solid #E5E0DC;
+font-size: 100%; padding: 5px; }
+#qualifications tr:nth-child(2n) td { background-color: #F2EDE9; border:
+1px solid #E5E0DC; }
+#qualifications tr.pinkbg td { background-color: #FFEEEF!important; }

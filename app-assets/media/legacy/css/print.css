@@ -1,0 +1,84 @@
+/*****************************************************
+Print CSS File
+print.css
+Last Updated: RCB 23/04/07
+Version 2.0
+
+*****************************************************/
+
+@media print {
+
+body {
+	font-size: 12pt;	
+}
+
+#localNavigation, 
+#globalNavigation,
+#localNavigationContainer,
+#footer .footerLinks,
+#breadcrumbs,
+#searchBox,
+#headerLeft,
+#subGlobalNavigation  {
+  display:none;
+}
+
+#footer {
+  background-color: transparent;
+  color: black;
+}
+
+#contentContainer, #bodyContainer, #headerRight {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;  
+}
+
+#header {
+  background-color: transparent;
+}
+
+#pageTitle, #headerTitle {
+	visibility: visible;	
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.quickLinks {
+  border-width: 0;
+  background-color: transparent; 
+}
+.quickLinks a {
+	border-width: 0;
+}
+.quickLinks h6 {
+  color: black;
+  background-color: transparent;
+}
+
+/*****************************************************
+  sIFR Styles
+*****************************************************/
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed {
+	display: none !important; 
+	height: 0;
+	width: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+span.sIFR-alternate {
+
+	visibility: visible !important;
+	display: block !important;
+	position: static !important;
+	left: auto !important;
+	top: auto !important;
+	
+}
+
+
+}
+
