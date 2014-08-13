@@ -1,0 +1,32 @@
+# robots.txt for http://www.shef.ac.uk/
+User-agent: *
+Disallow: /phone
+
+Disallow: /demo
+Disallow: /archive/
+
+# NAP
+Disallow: /nap
+
+# CMS File store for P8 #
+Disallow: /content/
+
+## Search Appliance fixes ##
+
+# Java / CGI Apps
+Disallow: /diaryofevents
+Disallow: /careers-whats-on
+Disallow: /prospectus/buildProspectus.do
+Disallow: /prospectus/description.do
+Disallow: /prospectus/myProspectus.do
+Disallow: /prospectus/calcbursary.do
+Disallow: /framework/
+Disallow: /secure-bin/
+
+
+# Baidu hammering the union site
+User-agent: Baiduspider
+Disallow: /union/planner
+
+User-agent: zibber-v0.1(www.zibb.com/crawler/)
+Disallow: /
