@@ -18,6 +18,39 @@
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="/polopoly_fs/15.375.1407235850!/css/build/ie.css" />
   <![endif]-->
+<style type="text/css" media="screen">
+  .my-prospectus {
+     border-top: 1px solid #84c98c;
+     background: #10731c;
+     background: -webkit-gradient(linear, left top, left bottom, from(#4baa57), to(#10731c));
+     background: -webkit-linear-gradient(top, #4baa57, #10731c);
+     background: -moz-linear-gradient(top, #4baa57, #10731c);
+     background: -ms-linear-gradient(top, #4baa57, #10731c);
+     background: -o-linear-gradient(top, #4baa57, #10731c);
+     padding: 5px 30px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     border-radius: 8px;
+     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     box-shadow: rgba(0,0,0,1) 0 1px 0;
+     text-shadow: rgba(0,0,0,.4) 0 1px 0;
+     color: #ffffff;
+     font-size: 14px;
+     font-family: Georgia, serif;
+     text-decoration: none;
+     vertical-align: middle;
+  }
+  .my-prospectus:hover {
+     border-top-color: #ffffff;
+     background: #ffffff;
+     color: #4baa57;
+  }
+  .my-prospectus:active {
+     border-top-color: #ffffff;
+     background: #ffffff;
+  }  
+</style>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../polopoly_fs/15.375.1407235850!/js/libs/jquery.min.js"><\/script>')</script>
 </head>
@@ -240,17 +273,11 @@
 
 <div id="courseDetailsPage">
 
-<div id="basketCount" style="position: absolute; right: 10px;">
-
-      
+<div id="basketCount">
 	  <a href="https://www.sheffield.ac.uk/prospectus/buildProspectus.do">Build your own prospectus</a>
-      
-         
-
 </div>
-<br />
-<div style="position: absolute; right: 10px; width: 350px; margin-top: 4px;">
-	<a href="https://www.sheffield.ac.uk/prospectus/myProspectus.do?id=NG412015" onclick="return showBasketState(NG412015)"><img src="assets/images/myprospectus-add.png" alt=" " name="addtomyprospectus" title="basket" align="right" /></a>
+<div>
+	<button class="my-prospectus">add to myProspectus</button>
 	<div id="basketStatus"></div>
 </div>
 
