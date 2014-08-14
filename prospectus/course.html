@@ -19,38 +19,46 @@
     <link rel="stylesheet" href="/polopoly_fs/15.375.1407235850!/css/build/ie.css" />
   <![endif]-->
 <style type="text/css" media="screen">
-  .my-prospectus {
-     border-top: 1px solid #84c98c;
-     background: #10731c;
-     background: -webkit-gradient(linear, left top, left bottom, from(#4baa57), to(#10731c));
-     background: -webkit-linear-gradient(top, #4baa57, #10731c);
-     background: -moz-linear-gradient(top, #4baa57, #10731c);
-     background: -ms-linear-gradient(top, #4baa57, #10731c);
-     background: -o-linear-gradient(top, #4baa57, #10731c);
-     padding: 5px 30px;
-     -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-     border-radius: 8px;
-     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-     box-shadow: rgba(0,0,0,1) 0 1px 0;
-     text-shadow: rgba(0,0,0,.4) 0 1px 0;
-     color: #ffffff;
-     font-size: 14px;
-     font-family: Georgia, serif;
-     text-decoration: none;
-     vertical-align: middle;
-  }
-  .my-prospectus:hover {
-     border-top-color: #ffffff;
-     background: #ffffff;
-     color: #4baa57;
-  }
-  .my-prospectus:active {
-     border-top-color: #ffffff;
-     background: #ffffff;
-  }  
+.my-prospectus {
+  border-top: 1px solid #84c98c;
+  background: #10731c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4baa57), to(#10731c));
+  background: -webkit-linear-gradient(top, #4baa57, #10731c);
+  background: -moz-linear-gradient(top, #4baa57, #10731c);
+  background: -ms-linear-gradient(top, #4baa57, #10731c);
+  background: -o-linear-gradient(top, #4baa57, #10731c);
+  padding: 5px 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 0px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 0px 0;
+  box-shadow: rgba(0,0,0,1) 0 0px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.my-prospectus:hover {
+  border-top-color: #ffffff;
+  background: #ffffff;
+  color: #4baa57;
+}
+.my-prospectus:active {
+  border-top-color: #ffffff;
+  background: #ffffff;
+}
+.courseInfoBlock3 table {
+  margin: 0px 10px 10px 10px;
+  width: 90%;
+}
+aside .courseInfoBlock3 {
+  overflow: scroll;
+}
 </style>
+
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../polopoly_fs/15.375.1407235850!/js/libs/jquery.min.js"><\/script>')</script>
 </head>
@@ -275,43 +283,8 @@
 	<div id="basketStatus"></div>
 </div>
 
-<h2 class="departmentHeader">Accounting and Financial Management and Mathematics</h2>
-<h3 class="departmentHeader">Sheffield University Management School</h3>
-<div class="courseInfoBlock3">
-  <table>
-    <tr>
-      <th>A Levels</th>
-      <td>AAB <a href="courseDetails.do%3Fid=NG412015.html#qualifications">Other entry requirements</a></td>
-    </tr>
-    <tr>
-      <th>Qualification</th>
-      <td>BA</td>
-    </tr>
-    <tr>
-        <th>UCAS Code</th>
-        <td>NG41</td>
-    </tr>
-    <tr>
-      <th>Duration</th>
-      <td>3 years</td>
-    </tr>
-    <tr>
-      <th>Related subjects</th>
-      <td>
-        <a href="subjectDetails.do%3Fsubject=Management&amp;yr=2015.html">Management</a> /
-        <a href="subjectDetails.do%3Fsubject=Accounting_and_Financial_Management&amp;yr=2015.html">Accounting and Financial Management</a> /
-        <a href="subjectDetails.do%3Fsubject=Business_Management&amp;yr=2015.html">Business Management</a> /
-        <a href="subjectDetails.do%3Fsubject=Mathematics_and_Statistics&amp;yr=2015.html">Mathematics and Statistics</a>
-        <span style="display:none" id="prioritySubject">N</span>
-        <span style="display:none" id="attractsBursary">Y</span>
-      </td>
-    </tr>
-    <tr id="bursaryValue">
-      <th>Financial help</th>
-      <td><a href="../undergraduate/finance/help.html">Find out how much you could get</a></td>
-    </tr>
-  </table>
-</div>
+  <h2 class="departmentHeader">Accounting and Financial Management and Mathematics</h2>
+  <h3 class="departmentHeader">Sheffield University Management School</h3>
 <div class="courseNavigation">
   <ul>
     <li class="tabSummary">
@@ -628,7 +601,41 @@ bursaryLookup('NG412015');
         <!-- start: Right side content -->
         <div class="col-md-7 col-lg-7">
           <aside class="aside" role="complementary">
-
+<div class="courseInfoBlock3">
+  <table>
+    <tr>
+      <th>A Levels</th>
+      <td>AAB (<a href="courseDetails.do%3Fid=NG412015.html#qualifications">Other entry requirements</a>)</td>
+    </tr>
+    <tr>
+      <th>Qualification</th>
+      <td>BA</td>
+    </tr>
+    <tr>
+        <th>UCAS Code</th>
+        <td>NG41</td>
+    </tr>
+    <tr>
+      <th>Duration</th>
+      <td>3 years</td>
+    </tr>
+    <tr>
+      <th>Related subjects</th>
+      <td>
+        <a href="subjectDetails.do%3Fsubject=Management&amp;yr=2015.html">Management</a> /
+        <a href="subjectDetails.do%3Fsubject=Accounting_and_Financial_Management&amp;yr=2015.html">Accounting and Financial Management</a> /
+        <a href="subjectDetails.do%3Fsubject=Business_Management&amp;yr=2015.html">Business Management</a> /
+        <a href="subjectDetails.do%3Fsubject=Mathematics_and_Statistics&amp;yr=2015.html">Mathematics and Statistics</a>
+        <span style="display:none" id="prioritySubject">N</span>
+        <span style="display:none" id="attractsBursary">Y</span>
+      </td>
+    </tr>
+    <tr id="bursaryValue">
+      <th>Financial help</th>
+      <td><a href="../undergraduate/finance/help.html">Find out how much you could get</a></td>
+    </tr>
+  </table>
+</div>
 <!-- start: Right-hand links -->
 <div class="box box-quick-links">
     <h3 class="box-quick-links__title">Browse the 2015 online prospectus:</h3>
@@ -791,9 +798,7 @@ bursaryLookup('NG412015');
     <!--: end: JS scripts -->
     
     <!-- NAP -->
-    <script>
-      document.write('<script async src="http://www.sheffield.ac.uk/undergraduate/'&#32;+&#32;(&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;location.hostname.match(/^(www\.)?shef(field)?\.ac\.uk$/i)&#32;===&#32;null&#32;?&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;'https://'&#32;+&#32;location.hostname&#32;:&#32;'https://www.sheffield.ac.uk')&#32;+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;'/polopoly_fs/15.375.1407235850!/js/build/muse.min.js"><\/script>');
-    </script>
+    <script src="http://www.sheffield.ac.uk/polopoly_fs/15.375.1407235850!/js/build/muse.min.js"></script>
     <!-- // NAP -->
 
 <!-- MGMT SCHL -->
