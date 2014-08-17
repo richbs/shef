@@ -410,8 +410,10 @@
         </table>
         <h3>Statistics about this course</h3>
         <p>The figures below give you key information about this course. The data has been independently collected by the Higher Education Funding Council for England (HEFCE).</p>
-        <iframe id="unistats-widget-frame" title="Unistats KIS Widget" src="https://widget.unistats.ac.uk/Widget/10007157/N420/Horizontal/Small/EN-GB"  style="overflow: scroll; border: 0px none transparent; width: 615px; height: 150px;"></iframe>
-        <iframe id="unistats-widget-frame-2" title="Unistats KIS Widget" src="https://widget.unistats.ac.uk/Widget/10007157/G100/Horizontal/Small/EN-GB" style="overflow: scroll; border: 0px none transparent; width: 615px; height: 150px;"></iframe>
+        <div class="iframe-container" style="width:99%; overflow:scroll;">
+          <iframe id="unistats-widget-frame" title="Unistats KIS Widget" src="https://widget.unistats.ac.uk/Widget/10007157/N420/Horizontal/Small/EN-GB"  style="overflow: scroll; border: 0px none transparent; width: 615px; height: 150px;"></iframe>
+          <iframe id="unistats-widget-frame-2" title="Unistats KIS Widget" src="https://widget.unistats.ac.uk/Widget/10007157/G100/Horizontal/Small/EN-GB" style="overflow: scroll; border: 0px none transparent; width: 615px; height: 150px;"></iframe>
+        </div>
         <a href="#content">Back to top</a>
       </div>
       <div id="modules">
@@ -711,9 +713,16 @@ bursaryLookup('NG412015');
     <!--: start: JS scripts -->
     <script src="../js/sheffield/jquery/jquery.responsiveTabs.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-        jQuery('.courseDetails').responsiveTabs({
+        $('.courseDetails').responsiveTabs({
           startCollapsed: 'accordion',
-          collapsible: 'accordion'
+          collapsible: 'accordion',
+          activate: function(event, tab){
+            // Conditionally scroll to top of "tab" in accordion mode
+            if ($(window).width() < 992 && tab.selector !== '#courseSummary') {
+              var tab_pos = $(tab.selector).offset().top;
+              $(window).scrollTop(tab_pos - 80);            
+            }
+          }
         });
     </script>
     <script src="../polopoly_fs/15.375.1407235850!/js/build/script.min.js"></script>
